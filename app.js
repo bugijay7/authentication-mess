@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'http://authentication-mess.vercel.app',
+  origin: 'https://authentication-mess.vercel.app',
   credentials: true
 }));
 app.use(express.json());
@@ -26,7 +26,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: false, // Set to true if using HTTPS
+    secure: true, // Set to true if using HTTPS
     httpOnly: true,
     maxAge: 1000 * 60 * 60 * 24 // 1 day
   }
