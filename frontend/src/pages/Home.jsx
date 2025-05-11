@@ -8,7 +8,7 @@ const Home = () => {
     // Example: fetch user data if token/session is available
     const fetchUser = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/api/auth/home', {
+        const res = await axios.get('https://authentication-app-1r4i.onrender.com/api/auth/home', {
           withCredentials: true // if using cookies/session
         });
         setUser(res.data);

@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Adjust to your frontend origin
+  origin: 'http://authentication-mess.vercel.app',
   credentials: true
 }));
 app.use(express.json());

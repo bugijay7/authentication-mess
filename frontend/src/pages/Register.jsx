@@ -14,7 +14,7 @@ const Register = () => {
     const formData = { username, email, password };
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/auth/register',
+        'https://authentication-app-1r4i.onrender.com/api/auth/register',
         formData,
         { withCredentials: true }
       );
