@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { sql } from '../config/db.js';
 
 export const register = async (req, res) => {
